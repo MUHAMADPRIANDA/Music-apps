@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>SadVibes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css">
+body{
+ background-color:rgb(20, 20, 18);
+}
+h1{
+ padding:30px 0 60px;
+ font-weight:400 !important;
+}
+nav{
+ margin: 0px auto;
+}
+body{
+ padding: 0px 0%;
+}
+</style>
+<script>
+setTimeout(function(){
+
+},100);
+</script>
+
+<script>
+var theme=false;
+
+function bootswatch(name){
+  if (!document.createElement || !document.getElementsByTagName) 
+		return false;	
+  if(!name){
+    document.getElementsByTagName("head")[0].removeChild(theme);
+    return theme=false; console.log('no theme');
+  }
+  if(name=='bootstrap3'){
+    var url='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css';
+  }else{
+    var url='https://bootswatch.com/3/'+name.toLowerCase()+'/bootstrap.css';
+  }
+  if(!theme){
+    theme=document.createElement("link");
+		theme.setAttribute("rel", "stylesheet");
+		theme.setAttribute("type", "text/css");
+		theme.setAttribute("media", 'screen');
+		theme.setAttribute("href", url)
+    if (typeof theme!="undefined")
+	    document.getElementsByTagName("head")[0].appendChild(theme);
+    
+  }else{
+    theme.setAttribute("href", url);
+  }
+}
+</script>
+
+<script>
+bootswatch('bootstrap3');
+</script>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="wrapper">
+<nav class="navbar navbar-default navbar-custom">
+  <div class="container">
+    
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-vertical" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="#">
+          <i class="fa fa-home fa-2x"></i>
+          <span>Home</span>
+          <span class="sr-only">(current)</span></a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-heart fa-2x"></i>
+            <span>favorite</span></a>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-music fa-2x"></i>
+            <span>catagory</span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">jazz</a></li>
+            <li><a href="#">pop</a></li>
+            <li><a href="#">rock</a></li>
+          </ul>
+        </li>
+        
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+  
+<!--───────────────card game───────────────-->
+<h3 class="ket">Home - SadVibes<hr></h3>
+<div class="work">
+  <div class="card">
+    <a href="duka.html" target="_self">
+    <img class="work-img" src="duka last-child/duka.jpeg">
+  <div class="work-content">Last-Child Duka</div></a>
+      </div>
+
+  <div class="card">
+    <a href="ghost.html" target="_self"> <!--Link to project-->
+    <img class="work-img" src="ghost/ghost.jpeg">
+  <div class="work-content">Justin-Bieber Ghost</div></a>
+      </div>
+
+  <div class="card">
+    <a href="night.html" target="_self"> <!--Link to project-->
+    <img class="work-img" src="night/night.jpeg">
+  <div class="work-content">One-Direction Night Changes</div></a>
+      </div>
+
+  <div class="card">
+    <a href="neck-deep.html" target="_self"> <!--Link to project-->
+    <img class="work-img" src="neck-deep/neck-deep.jpeg">
+  <div class="work-content">Neck-Deep Wish You Were Here</div></a>
+      </div>
+
+  <div class="card">
+    <a href="usai.html" target="_self"> <!--Link to project-->
+    <img class="work-img" src="usai/usai2.jpeg">
+  <div class="work-content">Keisya-Levronka Tak Ingin Usai</div></a>
+      </div>
+
+  <div class="card">
+    <a href="angels.html" target="_self"> <!--Link to project-->
+    <img class="work-img" src="angels/angels1.jpeg">
+  <div class="work-content">Miley-Cyrus Angels Like You</div></a>
+  </div>
+
+  <div class="card">
+    <a href="komang.html" target="_self"> <!--Link to project-->
+    <img class="work-img" src="komang/komang.jpeg">
+  <div class="work-content">Raim-Laode Komang</div></a>
+      </div>
+
+   <div class="card">
+    <a href="right-now.html" target="_self"> <!--Link to project-->
+    <img class="work-img" src="right-now/right-now.jpeg">
+  <div class="work-content">One-Direction Right Now</div></a>
+      </div>
+<!-- end card -->
+</div>
+<!-- end work -->  
+</div><!-- /.wrapper-->
+  <!-- credit -->
+  <div class="container-fluid mt-2">
+    <div class="row" id="footer-credit" style="background: white">
+      <div class="col">
+        <div class="container mt-2 mb-2 text-center">
+          <small class="text-white">
+            Copyright & Developed © 2023 By <a href="#" class="text-white">RIAN</a>. All Rights Reserved. 
+          </small>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end credit -->
+  <div class="modal-backdrop fade hidden"></div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
